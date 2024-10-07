@@ -11,12 +11,12 @@ function draw() {
   for(let i = 0; i < num_cir; i++) {
     let x_1 = i * x_step;
     let r;
-    if (i === Math.floor(num_cir / 2)) {
+    if (i === num_cir / 2) {
       r = 30;
-    } else if (i < Math.floor(num_cir / 2)) {
-      r = map(i, 0, Math.floor(num_cir / 2) - 1, 2, 25);
+    } else if (i < num_cir / 2) {
+      r = map(i, 0, num_cir / 2 - 1, 2, 25);
     } else {
-      r = map(i, Math.floor(num_cir / 2) + 1, num_cir - 1, 25, 2);
+      r = map(i, num_cir / 2 + 1, num_cir - 1, 25, 2);
     }
     draw_circle(x_1, r);
   }
@@ -24,12 +24,12 @@ function draw() {
   for(let i = 0; i < num_cir; i++) {
     let x_2 = width / 3 + i * x_step;
     let r;
-    if (i === Math.floor(num_cir / 2)) {
+    if (i === num_cir / 2) {
       r = 30;
-    } else if (i < Math.floor(num_cir / 2)) {
-      r = map(i, 0, Math.floor(num_cir / 2) - 1, 2, 25);
+    } else if (i < num_cir / 2) {
+      r = map(i, 0, num_cir / 2 - 1, 2, 25);
     } else {
-      r = map(i, Math.floor(num_cir / 2) + 1, num_cir - 1, 25, 2);
+      r = map(i, num_cir / 2 + 1, num_cir - 1, 25, 2);
     }
     draw_circle(x_2, r);
   }
@@ -37,12 +37,12 @@ function draw() {
   for(let i = 0; i < num_cir; i++) {
     let x_3 = 2 * width / 3 + i * x_step;
     let r;
-    if (i === Math.floor(num_cir / 2)) {
+    if (i === num_cir / 2) {
       r = 30;
-    } else if (i < Math.floor(num_cir / 2)) {
-      r = map(i, 0, Math.floor(num_cir / 2) - 1, 2, 25);
+    } else if (i < num_cir / 2) {
+      r = map(i, 0, num_cir / 2 - 1, 2, 25);
     } else {
-      r = map(i, Math.floor(num_cir / 2) + 1, num_cir - 1, 25, 2);
+      r = map(i,num_cir / 2 + 1, num_cir - 1, 25, 2);
     }
     draw_circle(x_3, r);
   }
