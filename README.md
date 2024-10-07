@@ -3,7 +3,7 @@ For the first assignment, I tried this one:
 
 ![alt text](image.png)
 
-Yet, it is hard to code exactly the same, and I asked for ChatGPT on how to use the  Math.floor, I initially tried to use the %, but did not work.
+Yet, it is hard to code exactly the same, and I asked for ChatGPT on how to use the  map, I initially tried to use the %, but did not work.
 
 # HW04B
 For the latter, I tried this one: 
