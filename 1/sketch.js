@@ -1,11 +1,28 @@
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  background(255);
+  noLoop();
 }
 
 function draw() {
-  background(255);
-  fill(0);
-  rect(width / 2 - width / 40, height / 4 - width / 20, width / 20, height / 2 + width / 10);
-  rect(width / 2.5, height / 4 + height / 2, width - 2 * width / 2.5, width / 20);
-  rect(width / 2 - width / 20 - width / 40, height / 4 - width / 20, width / 20, width / 20);
+
+
+  for (let i = 0; i < 20; i++) {  
+    let xStart = random(width); 
+    let yStart = 0;
+    let band_W;
+    let band_H;
+    band_W = random(1, 100);
+    band_H = random(height / 4, height + 200);
+    
+    if (xStart < width / 2) {
+      xStart = width / 2;
+    }
+
+    fill(random(100, 255), random(125), random(55));
+    noStroke();
+
+    quad(xStart, yStart, xStart - band_W, yStart + band_H, xStart, yStart + band_H, xStart + band_W, yStart);
+
+  }
 }
